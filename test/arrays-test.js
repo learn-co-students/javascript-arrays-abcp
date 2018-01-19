@@ -12,7 +12,7 @@ describe('arrays', () => {
 
   describe('chocolateBars', () => {
     it('is an array containing "snickers", "hundred grand", "kitkat", and "skittles"', () => {
-      expect(chocolateBars).to.eql['snickers', 'hundred grand', 'kitkat', 'skittles']
+      expect(chocolateBars).to.eql(['snickers', 'hundred grand', 'kitkat', 'skittles'])
     })
   })
 
@@ -78,7 +78,7 @@ describe('arrays', () => {
     })
   })
   
-  describe('destructivelyRemoveElementFromBeginningOfArray(array)', ()=>{
+  describe('destructivelyRemoveElementFromBeginningOfArray(array, element)', ()=>{
     it('returns the array with the first element removed', () => {
       expect(destructivelyRemoveElementFromBeginningOfArray([1, 2, 3])).to.eql([2, 3])
     })
@@ -92,7 +92,7 @@ describe('arrays', () => {
 
   describe('removeElementFromBeginningOfArray(array)', () => {
     it('removes the first element from the array', () => {
-      expect(removeElementFromBeginningOfArray([1, 2, 3])).to.eql([2, 3])
+      expect(removeElementFromBeginningOfArray([1, 2, 3])).to.eql([2, 3]);
     })
 
     it('does not alter the original array', () => {
